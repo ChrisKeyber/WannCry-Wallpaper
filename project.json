@@ -1,0 +1,215 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "An attempt to turn Wannacry virus into a clock + timer\r\n(a video of tutorial will be soon available on YouTube ;))\r\n------------------------------------------------------------------------\r\nFeatures:\r\n2 clocks that display today's date\r\n2 timers that count down to future tasks\r\nCustomizable title, display of time fields\r\nDragable, Resizable window\r\n------------------------------------------------------------------------\r\nSetting introduction:\r\n\r\nA. Other settings\r\nEnable window: Close / Open the WannaCry window\r\n(Clicking the close button on the right hand corner of the window also work)\r\n\r\nZoom: Modify the overall size of the window and elements\r\n(Dragging the 4 corner could only change the size of window)\r\n\r\nAddress: Input whatever you want, it is a text field\r\n\r\n\r\n\r\nB. Timer Boxes\r\n*The two timer boxes have the same features\r\n\r\nToday's date: \r\nCheck: Display today's date\r\nUn-check: Display a timer\r\n\r\nTitle: The title of the timer\r\nDate: Change the end date of the timer\r\n(correct format: [YYYY/MM/DD hh:mm:ss], \r\nbracket is not needed, only ONE SPACE between DD and hh)\r\n\r\nStarting Date:\r\nIt changes speed of progress bar\r\n(for example\r\nToday is 1st of May, Start date is 1st of Jan, End date is 1st of Dec\r\nThe bar will be half finished.\r\nToday is 1st of May, Start date is 1st of May, End date is 1st of Dec\r\nThe bar will be full.\r\nThe progress bar will drop in relative size of the time scale, hence,\r\nthe shorter between the distance of start and end, the faster the progress bar is.\r\n\r\nNOTICE! The progress WON'T work if today's date is not yet the starting date\r\n)\r\n\r\nDays, Hours, Minutes, Seconds are simple used to hide or display the corresponding field. \r\n\r\nThe today's date Days field display the day of the year \r\ne.g., 3 of Feb  = 34 (31 in Jan+3 in Feb)\r\n------------------------------------------------------------------------\r\nBy downloading this wallpaper, you acknowledge the followings:\r\n1. This wallpaper is a CLEAN WEB-BASED project, it does not and will never contain and form of malicious software/ codes/ scripts\r\n2.The bitcoin address in the preview image serves NO validity\r\n3. You have been advised to not utilize this wallpaper for any illegal activity\r\nincluding but not limited to modify and publish the source file with malicious codes, illegal financial transaction.\r\n\r\nDisclaimer:\r\n\"The creator (and the initial distributor) of this wallpaper, hereby declare that I will not be held responsible for any illegal or unauthorized use of this wallpaper by third parties. By downloading and using this wallpaper, you agree to absolve me of any liability arising from such misuse.\"\r\n(Chat GPT asked me to give some of the above before publishing LOL\r\nlike who in the world will trust this. )\r\n------------------------------------------------------------------------",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"address" : 
+			{
+				"index" : 21,
+				"order" : 121,
+				"text" : "Address",
+				"type" : "textinput",
+				"value" : "1C64jtBr4faB4p2loEXdINNxbtbVgo0xUQ"
+			},
+			"box1title" : 
+			{
+				"condition" : "!box1todaysdate.value",
+				"index" : 2,
+				"order" : 102,
+				"text" : "Title",
+				"type" : "textinput",
+				"value" : "Payment will be raised on"
+			},
+			"box1todaysdate" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Today's date",
+				"type" : "bool",
+				"value" : false
+			},
+			"box2title" : 
+			{
+				"condition" : "!box2todaysdate.value",
+				"index" : 11,
+				"order" : 111,
+				"text" : "Title",
+				"type" : "textinput",
+				"value" : "Your files will be lost on"
+			},
+			"box2todaysdate" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Today's date",
+				"type" : "bool",
+				"value" : false
+			},
+			"enableWindowbool" : 
+			{
+				"index" : 19,
+				"order" : 119,
+				"text" : "Enable Window",
+				"type" : "bool",
+				"value" : true
+			},
+			"othersettings" : 
+			{
+				"condition" : "",
+				"index" : 18,
+				"order" : 118,
+				"text" : "Other Settings",
+				"type" : "group",
+				"value" : ""
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"timer1date" : 
+			{
+				"condition" : "!box1todaysdate.value",
+				"index" : 3,
+				"order" : 103,
+				"text" : "Date (YYYY/MM/DD hh:mm:ss)",
+				"type" : "textinput",
+				"value" : "[Insert Date]"
+			},
+			"timer1day" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Days",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer1hour" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "Hours",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer1min" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "Minutes",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer1sec" : 
+			{
+				"index" : 8,
+				"order" : 108,
+				"text" : "Seconds",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer1startingdate" : 
+			{
+				"condition" : "box1todaysdate.value ==false",
+				"index" : 4,
+				"order" : 104,
+				"text" : "Starting Date (YYYY/MM/DD hh:mm:ss)",
+				"type" : "textinput",
+				"value" : "2024/04/01 12:00:00"
+			},
+			"timer2date" : 
+			{
+				"condition" : "!box2todaysdate.value",
+				"index" : 12,
+				"order" : 112,
+				"text" : "Date (YYYY/MM/DD hh:mm:ss)",
+				"type" : "textinput",
+				"value" : "[Insert Date]"
+			},
+			"timer2day" : 
+			{
+				"index" : 14,
+				"order" : 114,
+				"text" : "Days",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer2hour" : 
+			{
+				"index" : 15,
+				"order" : 115,
+				"text" : "Hours",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer2min" : 
+			{
+				"index" : 16,
+				"order" : 116,
+				"text" : "Minutes",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer2sec" : 
+			{
+				"index" : 17,
+				"order" : 117,
+				"text" : "Seconds",
+				"type" : "bool",
+				"value" : true
+			},
+			"timer2startingdate" : 
+			{
+				"condition" : "box2todaysdate.value ==false",
+				"index" : 13,
+				"order" : 113,
+				"text" : "Starting Date (YYYY/MM/DD hh:mm:ss)",
+				"type" : "textinput",
+				"value" : "2024/04/01 12:00:00"
+			},
+			"timerbox1" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "TimerBox1",
+				"type" : "group",
+				"value" : ""
+			},
+			"timerbox2" : 
+			{
+				"index" : 9,
+				"order" : 109,
+				"text" : "TimerBox2",
+				"type" : "group",
+				"value" : ""
+			},
+			"zoomscaleslider" : 
+			{
+				"index" : 20,
+				"max" : 10,
+				"min" : 0,
+				"order" : 120,
+				"text" : "Zoom",
+				"type" : "slider",
+				"value" : 1
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"snapshotformat" : -1,
+	"snapshotoverlay" : "",
+	"tags" : [ "Technology" ],
+	"title" : "WannaCry (Draggable + resizable window, clock and count down, customizable)",
+	"type" : "web",
+	"version" : 2,
+	"visibility" : "public",
+	"workshopid" : "3244356286",
+	"workshopurl" : "steam://url/CommunityFilePage/3244356286"
+}
